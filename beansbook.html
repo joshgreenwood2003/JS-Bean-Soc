@@ -9,24 +9,83 @@
 
         <title>Beans Soc</title>
         <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+
     </head>
     <body>
+
+      
+
+
+
         <iframe src="navbar.html" class="navbarIframe"></iframe>
         
 		
-		
+
 		
 		<div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="beanbook.png" alt="" width="72" height="57">
+      <img src = "media/beancan.jpg" width = "150" height = "100" style = "transform:rotate(355deg); position:absolute; left: 10%; top: 10%;"></img>
+      <img src = "media/beancan.jpg" width = "150" height = "100" style = "transform:rotate(335deg); position:absolute; left: 90%; top: 20%;"></img>
+      <img src = "media/beancan.jpg" width = "150" height = "100" style = "transform:rotate(25deg); position:absolute; left: 5%; top: 70%;"></img>
+      <img src = "media/beancan.jpg" width = "150" height = "100" style = "transform:rotate(50deg); position:absolute; left: 65%; top: 45%;"></img>
+      <img src = "media/beancan.jpg" width = "150" height = "100" style = "transform:rotate(25deg); position:absolute; left: 85%; top: 100%;"></img>
+    <img class="d-block mx-auto mb-4" src="media/beanbook.png" alt="" width="72" height="57">
     <h1 class="display-5 fw-bold">The beans book</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">The worlds most prestigious book. To have your name and fingerprint engraved within this book is the highest honour which can be bestowed upon you during your time at Durham</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3">View the book</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Join the book</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" id = "myInput" data-bs-toggle="modal" data-bs-target="#exampleModal">Join the book</button>
       </div>
     </div>
   </div>
+  
+
+
+ 
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up to BeanSoc!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2zRoj85dXipLIs3_2_sRsAhPIgcK-x6UBF_KpjR-CN-U7aA/viewform?embedded=true" width="100%" height="938" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class = "container">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src= "media/The Official Bean Book.pdf" type = "application/pdf" height="600" width="1200"></iframe>
+  </div>
+</div>
+
+
+<script>
+  var myModal = document.getElementById('exampleModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+</script>
+
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
