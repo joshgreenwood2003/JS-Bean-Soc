@@ -6,11 +6,18 @@
     height:56px;
 }
 
-.vertical-center {
+.indexHDiv {
     position: relative;
-    top: 50%;
+    top: 45%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+
+  .horizontal-center {
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   html,body {
@@ -32,4 +39,11 @@
   .nolink {
       text-decoration: none;
       color: black;
+  }
+
+  .bordered {
+    filter: drop-shadow(1px 1px 0 black) 
+          drop-shadow(-1px -1px 0 black);
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                  drop-shadow(-1px -1px 0 black);
   }
