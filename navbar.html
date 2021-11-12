@@ -6,12 +6,19 @@
 
         <link rel="stylesheet" href="style.css">
         <script src="main.js"></script>
+        <script>
+          bool = false;
+          function toggled() {
+            bool = !bool;
+            parent.resizeIframe(bool);
+          }
+        </script>
     </head>
     <body style="height:fit-content;">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
             <div class="navbar-brand" style="margin-left:10px"><img class="non-drag" style="height:35px;margin-right:20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/John_Snow_College%2C_Durham.svg/833px-John_Snow_College%2C_Durham.svg.png"></img>JS Bean Soc</div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <button onclick="toggled()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
