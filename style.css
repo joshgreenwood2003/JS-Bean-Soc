@@ -3,7 +3,7 @@
     position:fixed;
     z-index:100;
     top:0px;
-    height:56px;
+    height:61px;
 }
 
 .indexHDiv {
@@ -47,3 +47,13 @@
     -webkit-filter: drop-shadow(1px 1px 0 black)
                   drop-shadow(-1px -1px 0 black);
   }
+
+
+  .non-drag {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
