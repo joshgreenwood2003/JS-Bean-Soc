@@ -1,5 +1,8 @@
 .navbarIframe {
     width:100%;
+    position:fixed;
+    z-index:100;
+    top:0px;
     height:56px;
 }
 
@@ -8,4 +11,25 @@
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+
+  html,body {
+      height:100%;
+  }
+
+  .scrollDownBtn {
+      position: absolute;
+      bottom:20px;
+      left: 50%;
+      -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: transparent;
+    border:none;
+    height:100px;
+    filter:brightness(100);
+  }
+
+  .nolink {
+      text-decoration: none;
+      color: black;
   }
