@@ -3,7 +3,7 @@
     position:fixed;
     z-index:100;
     top:0px;
-    height:61px;
+    height:65px;
 }
 
 .indexHDiv {
@@ -29,6 +29,8 @@
 
   html,body {
       height:100%;
+      max-width: 100%;
+    overflow-x: hidden;
   }
 
   .scrollDownBtn {
@@ -49,10 +51,10 @@
   }
 
   .bordered {
-    filter: drop-shadow(1px 1px 0 black) 
-          drop-shadow(-1px -1px 0 black);
-    -webkit-filter: drop-shadow(1px 1px 0 black)
-                  drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(2px 2px 0 black) 
+          drop-shadow(-2px -2px 0 black);
+    -webkit-filter: drop-shadow(2px 2px 0 black)
+                  drop-shadow(-2px -2px 0 black);
   }
 
 
@@ -63,4 +65,9 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+@font-face {
+  font-family: beantown;
+  src: url(media/BEANTOWN.TTF);
 }
