@@ -15,12 +15,13 @@
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/John_Snow_College%2C_Durham.svg/833px-John_Snow_College%2C_Durham.svg.png">
     <script src="main.js"></script>
   </head>
-  <body>
+  <body onload = "resizeIndex()" onresize="resizeIndex()">
     
     <iframe src="navbar.html?page=index" id="navbarIframe" class="navbarIframe"></iframe>
 
 
     <div
+          id="indexFrame"
           class="p-5 text-center bg-image"
           style="
           background-image: url('media/header_bg.jpeg');
@@ -28,24 +29,24 @@
           height: 100%;
           background-repeat: no-repeat;
           margin-top: 0px;
-          position:relative;
+          position: relative;
         "
   >
 
     <div class="mask indexHDiv">
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="text-black">
-          <img class="non-drag" src="media/header_txt.png" style="font-size:150px;max-width:100%;position:relative;top:40px;"></img>
-          <br>
-          <img class="non-drag" style="height:300px;margin-bottom:50px;position:relative;top:40px;" src="media/logo.png"></img>
+          <img id="headerTXT" class="non-drag" src="media/header_txt.png" style="font-size:150px;max-width:100%;position:relative;top:40px;"></img>
+          <div id="divide" style=""><br></div>
+          <img id="headerIMG" class="non-drag" style="width:175px;margin-bottom:50px;position:relative;top:40px;" src="media/logo.png"></img>
           
         </div>
         </div>
         </div>
-        <img src="media/scroll_down.gif" class="scrollDownBtn non-drag" onClick="document.getElementById('scrolledDown').scrollIntoView();" />
-
+        <div id="scrolledDown" style="position:absolute;bottom:65px;"></div>
+        <img id="arrow" src="media/scroll_down.gif" class="scrollDownBtn non-drag" onClick="document.getElementById('scrolledDown').scrollIntoView();" />
+  
     </div>
-    <div id="scrolledDown" style="position:absolute;bottom:65px;"></div>
 
     <div class="row featurette" style="padding:20px;">
       <div class="col-md">
@@ -53,20 +54,20 @@
         <p class="lead">We are just lovers of beans, we want to get together to attempt to write a review of beans at every Durham establishment which sells them. We want to create a comprehensive list so that our members know where to get the best beans in Durham. We want to create a space for the appreciation and discussion surrounding a food that is integral to surviving student life.</p>
       </div>
       <div class="col-md-5">
-        <img style="height:400px;" src = "media/index_img1.jpeg">
+        <img style="width:530px;max-width: 100%;" src = "media/index_img1.jpeg">
       </div>
     </div>
 
     <hr class="featurette-divider">
 
     <div class="row featurette" style="padding:20px;">
-      <div class="col-md-4">
-        <img style="height:400px;" src = "media/membership.png">
-      </div>
-      <div class="col-md">
+      <div class="col-md order-3">
         <h2 class="featurette-heading">Membership Options</h2>
         <p class="lead"></p>
   
+      </div>
+      <div class="col-md-4 order-1">
+        <img style="width:530px;max-width: 100%;" src = "media/membership.png">
       </div>
     </div>
 
