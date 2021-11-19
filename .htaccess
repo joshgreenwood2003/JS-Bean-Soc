@@ -1,1 +1,2 @@
 ErrorDocument 404 /err404.html
+Redirect /links https://linktr.ee/jsbeansoc
