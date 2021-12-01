@@ -75,3 +75,33 @@
   font-family: beantown;
   src: url(media/BEANTOWN.TTF);
 }
+
+.beanteam {
+  height:350px;
+}
+
+.box-left {
+  text-align:left;
+  width:90%;
+  float:left;
+  padding:10px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-left-style:none;
+  margin-bottom:40px;
+}
+
+.box-right {
+  text-align:right;
+  width:90%;
+  float:right;
+  padding:10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-right-style: none;
+  margin-bottom:40px;
+}
