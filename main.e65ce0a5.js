@@ -977,7 +977,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
 			s = e % 100;
 		return e + (a[(s - 20) % 10] || a[s] || a[0])
 	}
-	var Ha = new Date(2021, 5, 19, 0, 0, 0, 0);
+	var Ha = new Date(2022, 3, 02, 0, 0, 0, 0);
 
 	function Na(e, a) {
 		var s = new Date(e),
@@ -1664,6 +1664,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
 									r = JSON.parse(window.localStorage.getItem(j)),
 									i = JSON.parse(window.localStorage.getItem(S)),
 									l = "Beanle ".concat(s);
+									l += " found at jsbeansoc.co.uk/beanle.html !";
 								l += " ".concat(n ? t : "X", "/").concat(6), o && (l += "*");
 								var d = "";
 								return a.forEach((function (e) {
