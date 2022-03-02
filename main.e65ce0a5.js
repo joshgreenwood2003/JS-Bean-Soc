@@ -1664,7 +1664,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
 									r = JSON.parse(window.localStorage.getItem(j)),
 									i = JSON.parse(window.localStorage.getItem(S)),
 									l = "Beanle ".concat(s);
-									l += " found at jsbeansoc.co.uk/beanle.html !";
+								//	l += " found at jsbeansoc.co.uk/beanle.html !";
 								l += " ".concat(n ? t : "X", "/").concat(6), o && (l += "*");
 								var d = "";
 								return a.forEach((function (e) {
