@@ -1664,7 +1664,6 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
 									r = JSON.parse(window.localStorage.getItem(j)),
 									i = JSON.parse(window.localStorage.getItem(S)),
 									l = "Beanle ".concat(s);
-									l += ": play at jsbeansoc.co.uk/beanle.html !";
 								l += " ".concat(n ? t : "X", "/").concat(6), o && (l += "*");
 								var d = "";
 								return a.forEach((function (e) {
@@ -1691,7 +1690,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
 										}
 									})), d += "\n")
 								})), {
-									text: "".concat(l, "\n\n").concat(d.trimEnd())
+									text: "".concat(l, "\n\n").concat(d.trimEnd()).concat("\nPlay for yourself at www.jsbeansoc.co.uk/beanle.html")
 								}
 							}({
 								evaluations: e.gameApp.evaluations,
