@@ -947,8 +947,8 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
 		app_version: null === (Ea = window.wordle) || void 0 === Ea ? void 0 : Ea.hash,
 		debug_mode: !1
 	});
-	var La = ["green","heinz","baked","broad","black","great","chick","pinto","magic","jelly","giant","stalk","happy","string","beans","fried","toast","sauce","saucy","spicy","zesty","juice","slimy","cocoa","tonka","tesco","yummy"],
-		Ta = ["green","heinz","baked","broad","black","great","chick","pinto","magic","jelly","giant","stalk","happy","string","beans","fried","toast","sauce","saucy","spicy","zesty","juice","slimy","cocoa","tonka","tesco","yummy"],
+	var La = ["green","heinz","baked","broad","black","great","chick","pinto","magic","jelly","giant","stalk","happy","beans","fried","toast","sauce","saucy","spicy","zesty","juice","slimy","cocoa","tonka","tesco","yummy"],
+		Ta = ["green","heinz","baked","broad","black","great","chick","pinto","magic","jelly","giant","stalk","happy","beans","fried","toast","sauce","saucy","spicy","zesty","juice","slimy","cocoa","tonka","tesco","yummy"],
 		Ia = "present",
 		Ma = "correct",
 		Oa = "absent";
